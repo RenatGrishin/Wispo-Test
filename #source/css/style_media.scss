@@ -1,0 +1,354 @@
+// Адаптация под экраны
+//1920
+@media screen and (min-width: 1520px){
+  %tplBlockAlign{
+    width: 1520px;
+    margin: 0 auto;
+  }
+}
+//1366
+@media screen and (max-width: 1519px){
+  %tplBlockAlign{
+    width: 1080px;
+    margin: 0 auto;
+  }
+  %tplColDescription{
+    width: 265px;
+    margin-left: 55px;
+    margin-right: 55px;
+    &:last-of-type{
+      margin-right: auto;
+    }
+  }
+  .pTable {
+    .pHead {
+      align-items: flex-start;
+      .pImage{
+        margin-bottom: 18px;
+      }
+      .pColInfo {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 0px;
+      }
+    }
+  }
+}
+//980
+@media screen and (max-width: 1079px){
+  %tplBlockAlign{
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  %tplColDescription{
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    &:last-of-type{
+      margin-right: 0px;
+    }
+  }
+  %tplMultiTitleH2{
+    width: 270px;
+  }
+
+  .pTable {
+    .pHead {
+      align-items: flex-start;
+      .pImage{
+        margin-bottom: 18px;
+      }
+      .pColInfo {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 0px;
+        .pSubmit{
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: start;
+          .pBuyInClick{
+            margin-left: 0px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+    .pMultiLine{
+      width: 100%;
+    }
+  }
+}
+//768
+@media screen and (max-width: 849px){
+  %tplBlockAlign{
+    width: 650px;
+    margin: 0 auto;
+  }
+  %tplColDescription{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    &:last-of-type{
+      margin-right: 0px;
+    }
+  }
+  %tplColFirst{
+    width: 170px;
+  }
+  %tplMultiTitleH2{
+    width: 170px;
+  }
+  h1{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  %tplTableH2Size{
+    font-size: 16px;
+  }
+  %tplTablePSize{
+    font-size: 12px;
+  }
+  %tplMiniText{
+    font-size: 12px;
+  }
+  %tplLineMultiMiniH3{
+    font-size: 12px;
+  }
+  %tplNormalText{
+    font-size: 14px;
+  }
+  %tplNormalText400{
+    font-size: 14px;
+  }
+  %tplHeaderInfoP{
+    font-size: 12px;
+  }
+  %tplNormalText400{
+    font-size: 12px;
+    padding-top: 3px;
+  }
+  .mySelectForm {
+    .selectHead {
+      width: 170px;
+      height: 37px;
+      font-size: 10px;
+      padding-top: 12px;
+      padding-left: 15px;
+      &:after {
+        width: 8px;
+        height: 14px;
+      }
+    }
+    .selectList{
+      width: 170px;
+    }
+  }
+  .bottomInfo{
+    font-size: 16px;
+  }
+  .pTable{
+    .titleInfo{
+      .buttonInfo{
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+      }
+    }
+  }
+}
+//320
+@media screen and (max-width: 649px) {
+  %tplBlockAlign {
+    width: 100%;
+    margin: 0 auto;
+  }
+  %tplColDescription {
+    min-width: 130px;
+    width: 45%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+  }
+  %tplColFirst {
+    width: 100%;
+  }
+  %tplMultiTitleH2 {
+    width: 100%;
+  }
+  %tplTableMultiH3Big{
+    display: none;
+  }
+  %tplTableMultiH3Mobile{
+    display: block;
+  }
+  %tplTablePSize{
+    font-size: 10px;
+  }
+  %tplLineMultiMiniH3{
+    font-size: 10px;
+    width: 45%;
+  }
+  %tplLineMarginBottomMultiLine{
+    margin-bottom: 13px;
+  }
+  %tplBonus{
+    font-size: 10px;
+    padding: 7px 7px 7px 12px;
+    &:before{
+      top: 3px;
+      right: 5px;
+      width: 13px;
+      height: 13px;
+      @include imgBackground('../../img/bonus.svg', center);
+    }
+  }
+
+  .titlePage {
+    padding: 30px;
+
+    .blockAlign {
+      .breadСrumbs {
+        margin-bottom: 14px;
+      }
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+  .content {
+    background-color: $color1;
+    padding-top: 0px;
+
+    .mainPage {
+      padding: 15px 20px;
+    }
+  }
+  .pTable{
+    .pHead{
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .pColTitle{
+        margin-bottom: 30px;
+      }
+      .pPrice{
+        s{
+          display: block;
+          width: 100%;
+        }
+      }
+      .pBuyInClick{
+        display: none;
+      }
+      .pInCard{
+        width: 53px;
+        color: rgba(0,0,0,0);
+        background-image: url("../../img/cart-ico.svg");
+        background-repeat: no-repeat;
+        background-size: 23px;
+        background-position: center;
+      }
+    }
+    .titleInfo{
+      .buttonInfo{
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+        background-position: center;
+      }
+    }
+    section{
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid $color6;
+      &.pRowSingle{
+        justify-content: space-between;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        .pH2Title{
+          width: 100%;
+          margin-bottom: 12px;
+          h2{
+            display: inline-block;
+          }
+        }
+      }
+      &.pRowMulti{
+        justify-content: space-between;
+        .pH2Title{
+          width: 100%;
+          margin-bottom: 12px;
+          h2{
+            margin-bottom: 0px;
+            display: inline;
+          }
+        }
+        .pMultiLine{
+          justify-content: space-between;
+          margin-bottom: 13px;
+          .pMultiH3{
+            display: none;
+          }
+          .pColInfo{
+            .pMultiH3Mobile{
+              width: 100%;
+              h3{
+                font-size: 10px;
+              }
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottomInfo{
+    font-size: 12px;
+    .clearList{
+      width: 235px;
+      margin-bottom: 10px;
+    }
+    .back{
+      width: 235px;
+      text-align: center;
+      display: inline-block;
+      margin-left: 0px;
+      &:before{
+        left: 50px;
+      }
+    }
+  }
+  .pH2Title{
+    display: flex;
+    align-items: center;
+    .arrowSpoiler{
+      content: "";
+      display: inline-block;
+      margin-left: 15px;
+      width: 12px;
+      height: 7px;
+      background-image: url("../../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: 12px;
+      transition: 0.4s;
+    }
+    .openList{
+        transition: 0.4s;
+        transform: rotate(180deg);
+    }
+  }
+  .myRadio{
+    input[type=radio]{
+      &+p{
+        padding-left: 26px;
+        background-size: 16px;
+        background-position: left center;
+      }
+    }
+  }
+}

@@ -1,0 +1,836 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 70%;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  background-color: #000;
+  border-radius: 10px;
+  border: 0px;
+}
+input[type=submit]:focus {
+  outline: none;
+}
+input[type=submit]:hover {
+  opacity: 70%;
+}
+
+.content .mainPage, .titlePage .blockAlign {
+  width: 1520px;
+  margin: 0 auto;
+}
+
+.mySelectForm .selectList, .titlePage .blockAlign .breadСrumbs {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.mySelectForm .selectHead, .pTable .pHead .pColInfo .pAllInfo .pCategory, .titlePage .blockAlign .breadСrumbs li a, .titlePage .blockAlign .breadСrumbs li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9A9A9A;
+}
+
+.bottomInfo .back, .bottomInfo .clearList, .pTable .pHead .pColInfo .pAllInfo h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.myRadio input[type=radio] + p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pTable .pHead .pColInfo .pAllInfo .pPrice {
+  font-size: 20px;
+  font-weight: 600;
+}
+.pTable .pHead .pColInfo .pAllInfo .pPrice s {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9A9A9A;
+}
+
+.pTable .pHead .pColTitle {
+  width: 270px;
+}
+
+.pTable .pRowMulti .pMultiLine .pColInfo, .pTable .pRowSingle .pColInfo, .pTable .pHead .pColInfo {
+  width: 420px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.pTable .pRowMulti .pMultiLine .pMultiH3, .pTable .pRowSingle .pH2Title {
+  width: 270px;
+}
+
+.pTable .pRowMulti .pH2Title h2, .pTable .pRowSingle .pH2Title h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pTable .pRowMulti p, .pTable .pRowSingle .pColInfo p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pTable .pRowMulti .pMultiLine .pMultiH3 {
+  display: block;
+}
+
+.pTable .pRowMulti .pMultiLine .pColInfo .pMultiH3Mobile {
+  display: none;
+}
+
+.pTable .pRowSingle, .pTable section {
+  margin-bottom: 40px;
+}
+
+.pTable .pRowMulti .pMultiLine:not(:last-of-type), .pTable .pRowMulti .pH2Title h2 {
+  margin-bottom: 27px;
+}
+
+.pTable .pHead .pColTitle {
+  font-size: 16px;
+}
+
+.pTable .pRowMulti .pMultiLine h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #9A9A9A;
+  margin-bottom: 10px;
+}
+
+.pTable .pRowSingle .pColInfo .bonus {
+  display: inline;
+  position: relative;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 7px 7px 12px;
+  border: 2px solid #F6F6F6;
+  border-radius: 5px;
+}
+.pTable .pRowSingle .pColInfo .bonus:before {
+  position: relative;
+  top: 3px;
+  right: 5px;
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-image: url("../../img/bonus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.titlePage {
+  background-color: #fff;
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+.titlePage .blockAlign .breadСrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.titlePage .blockAlign .breadСrumbs li:not(:last-of-type):after {
+  content: "/";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.content {
+  background-color: #F6F6F6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content .mainPage {
+  border-radius: 10px;
+  padding: 48px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pTable {
+  width: 100%;
+}
+.pTable .pHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 38px;
+  margin-bottom: 40px;
+}
+.pTable .pHead .pColTitle {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.pTable .pHead .pColTitle .titleInfo {
+  margin-bottom: 22px;
+}
+.pTable .pHead .pColInfo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 18px;
+}
+.pTable .pHead .pColInfo .pImage {
+  margin-right: 30px;
+  max-width: 147px;
+  height: 147px;
+  overflow: hidden;
+}
+.pTable .pHead .pColInfo .pImage img {
+  height: 100%;
+}
+.pTable .pHead .pColInfo .pClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-image: url("../../img/x.svg");
+  background-size: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pTable .pHead .pColInfo .pAllInfo .pCategory {
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.pTable .pHead .pColInfo .pAllInfo h2 {
+  margin-bottom: 20px;
+}
+.pTable .pHead .pColInfo .pAllInfo h2 a {
+  color: #000;
+}
+.pTable .pHead .pColInfo .pAllInfo .pPrice {
+  margin-bottom: 13px;
+}
+.pTable .pHead .pColInfo .pAllInfo .pBuyInClick {
+  font-size: 12px;
+  color: #000;
+  margin-left: 20px;
+  padding-left: 25px;
+  padding-right: 0px;
+  background-color: #fff;
+  background-image: url("../../img/phoneBTN.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 16px;
+}
+.pTable .pRowSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pTable .pRowSingle .pH2Title {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.pTable .pRowSingle .pColInfo {
+  lex-shrink: 0;
+}
+.pTable .pRowMulti {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pTable .pRowMulti .pH2Title {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+}
+.pTable .pRowMulti .pMultiLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.pTable .titleInfo {
+  position: relative;
+}
+.pTable .titleInfo .buttonInfo {
+  margin-left: 10px;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #F6F6F6;
+  background-image: url("../../img/info.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
+.bottomInfo {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+.bottomInfo p {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+.bottomInfo .clearList {
+  color: #000;
+  background-color: #F6F6F6;
+  padding: 15px 40px;
+}
+.bottomInfo .back {
+  margin-left: 28px;
+  padding: 15px 40px 15px 60px;
+  background-color: #000;
+  border-radius: 10px;
+  position: relative;
+  color: #fff;
+}
+.bottomInfo .back:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 17px;
+  left: 40px;
+  background-image: url("../../img/arrow-white.svg");
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+
+.mySelectForm {
+  margin-bottom: 28px;
+}
+.mySelectForm .selectHead {
+  position: relative;
+  padding-top: 16px;
+  padding-left: 20px;
+  width: 250px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #E5E5E5;
+  -webkit-box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.mySelectForm .selectHead:after {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 20px;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 20px;
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.mySelectForm .openList:after {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.mySelectForm .selectList {
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+.mySelectForm .selectList li:not(:last-of-type) {
+  padding-bottom: 10px;
+}
+
+.myRadio label {
+  width: 100%;
+  display: inline-block;
+}
+.myRadio label:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.myRadio input[type=radio] {
+  display: none;
+}
+.myRadio input[type=radio] + p {
+  display: inline-block;
+  height: 20px;
+  padding-left: 36px;
+  background-image: url("../../img/radioBTN-normal.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+}
+.myRadio input[type=radio]:checked + p {
+  background-image: url("../../img/radioBTN-active.svg");
+}
+
+.titleInfoWindow {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  z-index: 100;
+  display: none;
+}
+.titleInfoWindow .titleInfoText {
+  display: block;
+  width: 260px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+.titleInfoWindow .titleInfoText b {
+  color: #000;
+}
+.titleInfoWindow .titleInfoArrowBottom {
+  display: block;
+  width: 260px;
+  height: 10px;
+  background-image: url("../../img/buttom-title-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrowSpoiler {
+  display: none;
+}
+
+@media screen and (min-width: 1520px) {
+  .titlePage .blockAlign, .content .mainPage {
+    width: 1520px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1519px) {
+  .titlePage .blockAlign, .content .mainPage {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+  .pTable .pHead .pColInfo, .pTable .pRowSingle .pColInfo, .pTable .pRowMulti .pMultiLine .pColInfo {
+    width: 265px;
+    margin-left: 55px;
+    margin-right: 55px;
+  }
+  .pTable .pHead .pColInfo:last-of-type, .pTable .pRowSingle .pColInfo:last-of-type, .pTable .pRowMulti .pMultiLine .pColInfo:last-of-type {
+    margin-right: auto;
+  }
+
+  .pTable .pHead {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pTable .pHead .pImage {
+    margin-bottom: 18px;
+  }
+  .pTable .pHead .pColInfo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .titlePage .blockAlign, .content .mainPage {
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  .pTable .pHead .pColInfo, .pTable .pRowSingle .pColInfo, .pTable .pRowMulti .pMultiLine .pColInfo {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pTable .pHead .pColInfo:last-of-type, .pTable .pRowSingle .pColInfo:last-of-type, .pTable .pRowMulti .pMultiLine .pColInfo:last-of-type {
+    margin-right: 0px;
+  }
+
+  .pTable .pRowSingle .pH2Title, .pTable .pRowMulti .pMultiLine .pMultiH3 {
+    width: 270px;
+  }
+
+  .pTable .pHead {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pTable .pHead .pImage {
+    margin-bottom: 18px;
+  }
+  .pTable .pHead .pColInfo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0px;
+  }
+  .pTable .pHead .pColInfo .pSubmit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .pTable .pHead .pColInfo .pSubmit .pBuyInClick {
+    margin-left: 0px;
+    margin-bottom: 8px;
+  }
+  .pTable .pMultiLine {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 849px) {
+  .titlePage .blockAlign, .content .mainPage {
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  .pTable .pHead .pColInfo, .pTable .pRowSingle .pColInfo, .pTable .pRowMulti .pMultiLine .pColInfo {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pTable .pHead .pColInfo:last-of-type, .pTable .pRowSingle .pColInfo:last-of-type, .pTable .pRowMulti .pMultiLine .pColInfo:last-of-type {
+    margin-right: 0px;
+  }
+
+  .pTable .pHead .pColTitle {
+    width: 170px;
+  }
+
+  .pTable .pRowSingle .pH2Title, .pTable .pRowMulti .pMultiLine .pMultiH3 {
+    width: 170px;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .pTable .pRowSingle .pH2Title h2, .pTable .pRowMulti .pH2Title h2 {
+    font-size: 16px;
+  }
+
+  .pTable .pRowSingle .pColInfo p, .pTable .pRowMulti p {
+    font-size: 12px;
+  }
+
+  .titlePage .blockAlign .breadСrumbs li, .titlePage .blockAlign .breadСrumbs li a, .pTable .pHead .pColInfo .pAllInfo .pCategory, .mySelectForm .selectHead {
+    font-size: 12px;
+  }
+
+  .pTable .pRowMulti .pMultiLine h3 {
+    font-size: 12px;
+  }
+
+  .pTable .pHead .pColInfo .pAllInfo h2, .bottomInfo .clearList, .bottomInfo .back {
+    font-size: 14px;
+  }
+
+  .myRadio input[type=radio] + p {
+    font-size: 14px;
+  }
+
+  .pTable .pHead .pColTitle {
+    font-size: 12px;
+  }
+
+  .myRadio input[type=radio] + p {
+    font-size: 12px;
+    padding-top: 3px;
+  }
+
+  .mySelectForm .selectHead {
+    width: 170px;
+    height: 37px;
+    font-size: 10px;
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+  .mySelectForm .selectHead:after {
+    width: 8px;
+    height: 14px;
+  }
+  .mySelectForm .selectList {
+    width: 170px;
+  }
+
+  .bottomInfo {
+    font-size: 16px;
+  }
+
+  .pTable .titleInfo .buttonInfo {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .titlePage .blockAlign, .content .mainPage {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .pTable .pHead .pColInfo, .pTable .pRowSingle .pColInfo, .pTable .pRowMulti .pMultiLine .pColInfo {
+    min-width: 130px;
+    width: 45%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pTable .pHead .pColInfo:last-of-type, .pTable .pRowSingle .pColInfo:last-of-type, .pTable .pRowMulti .pMultiLine .pColInfo:last-of-type {
+    margin-right: 0px;
+  }
+
+  .pTable .pHead .pColTitle {
+    width: 100%;
+  }
+
+  .pTable .pRowSingle .pH2Title, .pTable .pRowMulti .pMultiLine .pMultiH3 {
+    width: 100%;
+  }
+
+  .pTable .pRowMulti .pMultiLine .pMultiH3 {
+    display: none;
+  }
+
+  .pTable .pRowMulti .pMultiLine .pColInfo .pMultiH3Mobile {
+    display: block;
+  }
+
+  .pTable .pRowSingle .pColInfo p, .pTable .pRowMulti p {
+    font-size: 10px;
+  }
+
+  .pTable .pRowMulti .pMultiLine h3 {
+    font-size: 10px;
+    width: 45%;
+  }
+
+  .pTable .pRowMulti .pH2Title h2, .pTable .pRowMulti .pMultiLine:not(:last-of-type) {
+    margin-bottom: 13px;
+  }
+
+  .pTable .pRowSingle .pColInfo .bonus {
+    font-size: 10px;
+    padding: 7px 7px 7px 12px;
+  }
+  .pTable .pRowSingle .pColInfo .bonus:before {
+    top: 3px;
+    right: 5px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../../img/bonus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .titlePage {
+    padding: 30px;
+  }
+  .titlePage .blockAlign .breadСrumbs {
+    margin-bottom: 14px;
+  }
+  .titlePage h1 {
+    text-align: center;
+  }
+
+  .content {
+    background-color: #fff;
+    padding-top: 0px;
+  }
+  .content .mainPage {
+    padding: 15px 20px;
+  }
+
+  .pTable .pHead {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pTable .pHead .pColTitle {
+    margin-bottom: 30px;
+  }
+  .pTable .pHead .pPrice s {
+    display: block;
+    width: 100%;
+  }
+  .pTable .pHead .pBuyInClick {
+    display: none;
+  }
+  .pTable .pHead .pInCard {
+    width: 53px;
+    color: rgba(0, 0, 0, 0);
+    background-image: url("../../img/cart-ico.svg");
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+  }
+  .pTable .titleInfo .buttonInfo {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    background-position: center;
+  }
+  .pTable section {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  .pTable section.pRowSingle {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 24px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pTable section.pRowSingle .pH2Title {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .pTable section.pRowSingle .pH2Title h2 {
+    display: inline-block;
+  }
+  .pTable section.pRowMulti {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pTable section.pRowMulti .pH2Title {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .pTable section.pRowMulti .pH2Title h2 {
+    margin-bottom: 0px;
+    display: inline;
+  }
+  .pTable section.pRowMulti .pMultiLine {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  .pTable section.pRowMulti .pMultiLine .pMultiH3 {
+    display: none;
+  }
+  .pTable section.pRowMulti .pMultiLine .pColInfo .pMultiH3Mobile {
+    width: 100%;
+    display: inline-block;
+  }
+  .pTable section.pRowMulti .pMultiLine .pColInfo .pMultiH3Mobile h3 {
+    font-size: 10px;
+  }
+
+  .bottomInfo {
+    font-size: 12px;
+  }
+  .bottomInfo .clearList {
+    width: 235px;
+    margin-bottom: 10px;
+  }
+  .bottomInfo .back {
+    width: 235px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 0px;
+  }
+  .bottomInfo .back:before {
+    left: 50px;
+  }
+
+  .pH2Title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pH2Title .arrowSpoiler {
+    content: "";
+    display: inline-block;
+    margin-left: 15px;
+    width: 12px;
+    height: 7px;
+    background-image: url("../../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 12px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .pH2Title .openList {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+
+  .myRadio input[type=radio] + p {
+    padding-left: 26px;
+    background-size: 16px;
+    background-position: left center;
+  }
+}
